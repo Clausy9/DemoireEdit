@@ -1,8 +1,8 @@
-# DSC-Edit project website
+# DemoiréEdit project website
 
 Project page for **Dual-Scale Condition-Shift Editing for Robust Real-World Image Demoiréing**.
 
-Website: https://clausy9.github.io/DSC-Edit/
+Website: https://clausy9.github.io/DemoireEdit/
 
 This repository contains static website files and selected qualitative paper panels. Paper, code and model links will be added when released. It does not contain model weights, training code, manuscript source or private experiment records.
 
