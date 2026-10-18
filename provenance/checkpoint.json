@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "artifact": "selected step-3000 LoRA",
+  "size_bytes": 472047184,
+  "sha256": "15ad05bfb1b8c9d975605b18195abcf8485f28a26bb9b07dc350740a465319fd",
+  "tensor_count": 1440,
+  "dtype": "BF16",
+  "selection": "owner confirmed",
+  "local_copy_verified": true,
+  "historical_training_recipe_verified": false
+}

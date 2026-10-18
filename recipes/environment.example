@@ -1,0 +1,6 @@
+# Source this file from the repository root after preparing model assets.
+export DIFFSYNTH_MODEL_BASE_PATH=weights/base
+export DIFFSYNTH_SKIP_DOWNLOAD=true
+export DEMOIRE_EDIT_WEIGHTS_PATH=weights/demoireedit.safetensors
+# Bind the processor path from configs/base-models.json before training.
+# export DEMOIRE_EDIT_PROCESSOR_PATH=...

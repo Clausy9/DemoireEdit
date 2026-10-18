@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "total_bytes": 57715390106,
+  "models": [
+    {
+      "repo_id": "Qwen/Qwen-Image-Edit-2509",
+      "revision": "d3968ef930e841f4c73640fb8afa3b306a78167e",
+      "files": [
+        {
+          "name": "transformer/config.json",
+          "size": 339,
+          "sha256": null
+        },
+        {
+          "name": "transformer/diffusion_pytorch_model-00001-of-00005.safetensors",
+          "size": 9973578592,
+          "sha256": "784a8efc4dcea09ba20b534bbe9e5fae3367d929525031a4bd26c5ddb7eb18e5"
+        },
+        {
+          "name": "transformer/diffusion_pytorch_model-00002-of-00005.safetensors",
+          "size": 9987326072,
+          "sha256": "86ce21e5e3bdecfbeaa31aa587c03d0d1af6ab05d79c127149e8217f81e0247f"
+        },
+        {
+          "name": "transformer/diffusion_pytorch_model-00003-of-00005.safetensors",
+          "size": 9987307440,
+          "sha256": "c6a046daa991f3b32c3ae39ff95e6e7220455265fcbbb643e9f556bea8641d02"
+        },
+        {
+          "name": "transformer/diffusion_pytorch_model-00004-of-00005.safetensors",
+          "size": 9930685712,
+          "sha256": "c28bf871d5db0a6397843eca3987e58ba2c3013d287d5d4a1271d68e158ce7e8"
+        },
+        {
+          "name": "transformer/diffusion_pytorch_model-00005-of-00005.safetensors",
+          "size": 982130472,
+          "sha256": "dd2844e5cafb03b16bed9556aa29c15396a787e17c38a0eda7f5a1281497c76a"
+        },
+        {
+          "name": "transformer/diffusion_pytorch_model.safetensors.index.json",
+          "size": 198887,
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "repo_id": "Qwen/Qwen-Image",
+      "revision": "75e0b4be04f60ec59a75f475837eced720f823b6",
+      "files": [
+        {
+          "name": "text_encoder/config.json",
+          "size": 3217,
+          "sha256": null
+        },
+        {
+          "name": "text_encoder/generation_config.json",
+          "size": 244,
+          "sha256": null
+        },
+        {
+          "name": "text_encoder/model-00001-of-00004.safetensors",
+          "size": 4968243304,
+          "sha256": "d725335e4ea2399be706469e4b8807716a8fa64bd03468252e9f7acf2415fee4"
+        },
+        {
+          "name": "text_encoder/model-00002-of-00004.safetensors",
+          "size": 4991495816,
+          "sha256": "b1830db6908dcc76df3a71492acbcf2b8cac130114cf1f3c2d9edae8de8c6de3"
+        },
+        {
+          "name": "text_encoder/model-00003-of-00004.safetensors",
+          "size": 4932751040,
+          "sha256": "09c1807c6d00d7cab94f7db39d4c02ebb8537225ccde383861ac48db97945aa6"
+        },
+        {
+          "name": "text_encoder/model-00004-of-00004.safetensors",
+          "size": 1691924384,
+          "sha256": "5dd068336d14d45ffb43cef374d286cc6ba9d8741b028f90a7d040d847961f4a"
+        },
+        {
+          "name": "text_encoder/model.safetensors.index.json",
+          "size": 57655,
+          "sha256": null
+        },
+        {
+          "name": "vae/config.json",
+          "size": 730,
+          "sha256": null
+        },
+        {
+          "name": "vae/diffusion_pytorch_model.safetensors",
+          "size": 253806966,
+          "sha256": "0c8bc8b758c649abef9ea407b95408389a3b2f610d0d10fcb054fe171d0a8344"
+        }
+      ]
+    },
+    {
+      "repo_id": "Qwen/Qwen-Image-Edit",
+      "revision": "ac7f9318f633fc4b5778c59367c8128225f1e3de",
+      "files": [
+        {
+          "name": "processor/added_tokens.json",
+          "size": 605,
+          "sha256": null
+        },
+        {
+          "name": "processor/chat_template.jinja",
+          "size": 1017,
+          "sha256": null
+        },
+        {
+          "name": "processor/merges.txt",
+          "size": 1671853,
+          "sha256": null
+        },
+        {
+          "name": "processor/preprocessor_config.json",
+          "size": 788,
+          "sha256": null
+        },
+        {
+          "name": "processor/special_tokens_map.json",
+          "size": 613,
+          "sha256": null
+        },
+        {
+          "name": "processor/tokenizer.json",
+          "size": 11421896,
+          "sha256": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+        },
+        {
+          "name": "processor/tokenizer_config.json",
+          "size": 4727,
+          "sha256": null
+        },
+        {
+          "name": "processor/video_preprocessor_config.json",
+          "size": 904,
+          "sha256": null
+        },
+        {
+          "name": "processor/vocab.json",
+          "size": 2776833,
+          "sha256": null
+        }
+      ]
+    }
+  ]
+}

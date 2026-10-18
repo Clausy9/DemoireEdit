@@ -1,0 +1,6 @@
+This project includes modified DiffSynth-Studio source.
+Upstream attribution: ModelScope Team.
+License: Apache License 2.0 (see LICENSE).
+Local modifications: neutral paths, selected dual-scale inference adapter,
+and a five-component training objective.
+Historical model tensors are not modified.

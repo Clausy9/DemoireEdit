@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-17",
+  "scope": "Package naming and qualitative presentation update; no new GPU generation or training",
+  "paper_title": "Dual-Scale Condition-Shift Editing for Robust Real-World Image Demoir\u00e9ing",
+  "distribution": "dual-scale-condition-shift",
+  "python_package": "dsc_edit",
+  "entry_points": [
+    "dsc-infer",
+    "dsc-demo",
+    "dsc-train"
+  ],
+  "checks": {
+    "cpu_checks_passed": 11,
+    "module_help": [
+      "dsc_edit.infer",
+      "dsc_edit.train",
+      "dsc_edit.demo"
+    ],
+    "sdist_and_wheel_build": "passed",
+    "documentation_links": "passed",
+    "desktop_and_mobile_overflow": "none",
+    "paper_images_loaded": 6,
+    "comparison_controls": "independent per card"
+  },
+  "qualitative_asset_provenance": "qualitative-examples.json",
+  "checkpoint": "unchanged; supplied weight SHA-256 remains bound by inference verifier",
+  "prior_gpu_receipts": "Retained; describe earlier package executions, not a new GPU run"
+}

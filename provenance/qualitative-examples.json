@@ -1,0 +1,132 @@
+{
+  "paper_title": "Dual-Scale Condition-Shift Editing for Robust Real-World Image Demoir\u00e9ing",
+  "source_pdf_sha256": "5a94b1686e3849a7324a000dbd65305d73f297e809f7e7e3edb8f5da4cd69b1b",
+  "source_figure_image_sha256": "5f41b46de108c06f47eba9d4058c75c93fb4d31c2debc9f1fc58f54550cfa96e",
+  "source_figure_dimensions": [
+    3600,
+    3303
+  ],
+  "processing": "Extract embedded Figure 8 JPEG; crop full input and method-result panels; lossless PNG encoding. No retouching, color adjustment, or generated pixels. Panel crops remove figure headers, other methods, labels, and whitespace only.",
+  "examples": [
+    {
+      "id": "architecture",
+      "label": "Architectural signage",
+      "figure": 8,
+      "pdf_page": 14,
+      "row": 1,
+      "kind": "historical paper qualitative result; not a new inference run",
+      "panels": [
+        {
+          "role": "input",
+          "path": "site/assets/paper-architecture-input.png",
+          "source_embedded_image_crop": [
+            114,
+            106,
+            679,
+            859
+          ],
+          "dimensions": [
+            565,
+            753
+          ],
+          "sha256": "603c7d75d82f60da51b68b1be204cfaab9bf4910e6e57a0d3983198b5b543eb5"
+        },
+        {
+          "role": "restored",
+          "path": "site/assets/paper-architecture-restored.png",
+          "source_embedded_image_crop": [
+            2989,
+            106,
+            3554,
+            859
+          ],
+          "dimensions": [
+            565,
+            753
+          ],
+          "sha256": "f656bced25a033b6d41341ca1c29c4dcb59396d81bf53175cfbdff78f45682d3"
+        }
+      ]
+    },
+    {
+      "id": "poster",
+      "label": "Illustrated display",
+      "figure": 8,
+      "pdf_page": 14,
+      "row": 2,
+      "kind": "historical paper qualitative result; not a new inference run",
+      "panels": [
+        {
+          "role": "input",
+          "path": "site/assets/paper-poster-input.png",
+          "source_embedded_image_crop": [
+            114,
+            873,
+            679,
+            1626
+          ],
+          "dimensions": [
+            565,
+            753
+          ],
+          "sha256": "8ea61803d552c90e1ef2b43bda8c82cffc370510c89d84c12509bd20e8516a59"
+        },
+        {
+          "role": "restored",
+          "path": "site/assets/paper-poster-restored.png",
+          "source_embedded_image_crop": [
+            2989,
+            873,
+            3554,
+            1626
+          ],
+          "dimensions": [
+            565,
+            753
+          ],
+          "sha256": "448597c8f13949cd6a4985e078c327a35c39fed811173a394c2e702b963eb615"
+        }
+      ]
+    },
+    {
+      "id": "game-display",
+      "label": "Game display",
+      "figure": 8,
+      "pdf_page": 14,
+      "row": 5,
+      "kind": "historical paper qualitative result; not a new inference run",
+      "panels": [
+        {
+          "role": "input",
+          "path": "site/assets/paper-game-display-input.png",
+          "source_embedded_image_crop": [
+            114,
+            2516,
+            679,
+            3269
+          ],
+          "dimensions": [
+            565,
+            753
+          ],
+          "sha256": "67e9e30c47700222bf06f5bc0a5bdf22a512bf0b94673fa3ab1a95894e4f4776"
+        },
+        {
+          "role": "restored",
+          "path": "site/assets/paper-game-display-restored.png",
+          "source_embedded_image_crop": [
+            2989,
+            2516,
+            3554,
+            3269
+          ],
+          "dimensions": [
+            565,
+            753
+          ],
+          "sha256": "067bcb6d192fb9027eb1831cdbf4a0231d29c92557244ba80977608cc46af0be"
+        }
+      ]
+    }
+  ]
+}

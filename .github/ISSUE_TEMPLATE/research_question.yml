@@ -1,0 +1,10 @@
+name: Method or reproduction question
+description: Ask about the method, settings or a reproduction result.
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: Describe the method setting or observation, including the relevant configuration and experiment scope.
+    validations:
+      required: true

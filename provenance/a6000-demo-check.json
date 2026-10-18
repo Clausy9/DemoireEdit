@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "updated_at": 1792074769.3153553,
+  "elapsed_seconds": 199.19,
+  "output": "outputs/demo-api-real-scene-01.png",
+  "dimensions": [
+    1536,
+    1536
+  ],
+  "pixels_equal_to_cli": true,
+  "mean_absolute_pixel_difference_from_cli": 0.0,
+  "scope": "Actual image upload, Gradio callback, full model inference and lossless output download; same real sample and seed as CLI"
+}

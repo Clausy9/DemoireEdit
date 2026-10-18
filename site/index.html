@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>DemoiréEdit | Dual-Scale Condition-Shift Editing</title><meta name="description" content="DemoiréEdit: Dual-Scale Condition-Shift Editing for Robust Real-World Image Demoiréing. Method, paper examples and research resources.">
+<link rel="canonical" href="https://clausy9.github.io/DemoireEdit/">
+<meta property="og:type" content="website"><meta property="og:title" content="DemoiréEdit: Dual-Scale Condition-Shift Editing"><meta property="og:description" content="Dual-Scale Condition-Shift Editing for Robust Real-World Image Demoiréing."><meta property="og:url" content="https://clausy9.github.io/DemoireEdit/">
+<meta name="color-scheme" content="light"><link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css"></head>
+<body><main id="top">
+<header><p class="project-name">DemoiréEdit</p><h1>Dual-Scale Condition-Shift Editing<br class="desktop-break"> for Robust Real-World Image Demoiréing</h1><div class="authors" aria-label="Authors"><span><a href="https://openreview.net/profile?id=~Shiyang_Zhou2">Shiyang Zhou</a><sup>1,2</sup></span>
+<span><a href="https://openreview.net/profile?id=~Haijin_Zeng1">Haijin Zeng</a><sup>1,*</sup></span>
+<span><a href="https://openreview.net/profile?id=~Congpei_Qiu1">Congpei Qiu</a><sup>2,3</sup></span>
+<span><a href="https://openreview.net/profile?id=~Zhengcen_Li1">Zhengcen Li</a><sup>1</sup></span>
+<span><a href="https://openreview.net/profile?id=~Ping_Chen8">Ping Chen</a><sup>1</sup></span>
+<span><a href="https://openreview.net/profile?id=~Xiangming_Wang1">Xiangming Wang</a><sup>1</sup></span>
+<span><a href="https://openreview.net/profile?id=~Zheng_Li58">Zheng Li</a><sup>1</sup></span>
+<span><a href="https://openreview.net/profile?id=~Yongyong_Chen1">Yongyong Chen</a><sup>1</sup></span>
+<span><a href="https://openreview.net/profile?id=~Jingyong_Su3">Jingyong Su</a><sup>1,*</sup></span>
+</div><div class="affiliations"><span><sup>1</sup>Harbin Institute of Technology, Shenzhen</span><span><sup>2</sup>Shenzhen Loop Area Institute</span><span><sup>3</sup>Xi’an Jiaotong University</span></div><p class="correspondence"><sup>*</sup> Corresponding authors.</p>
+<div class="resource-links"><span aria-disabled="true">Paper <small>Coming soon</small></span><a href="https://github.com/Clausy9/DemoireEdit" target="_blank" rel="noopener">Code ↗</a><a href="https://huggingface.co/umu/DemoireEdit" target="_blank" rel="noopener">Models ↗</a><a href="#citation">BibTeX</a></div></header>
+<section id="results" aria-labelledby="results-title"><h2 id="results-title">Real-world image demoiréing</h2><p class="section-intro" id="compare-help">Drag directly on each image to compare the input with our result. Use the arrow keys when focused.</p><div class="examples-grid"><figure data-comparison><div class="comparison" style="--reveal:50%" role="slider" tabindex="0" aria-label="Architectural signage: input and restoration comparison" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50% input" aria-describedby="compare-help">
+<img src="assets/paper-architecture-restored.png" alt="Paper restoration of architectural signage" width="565" height="753" draggable="false">
+<div class="input-layer"><img src="assets/paper-architecture-input.png" alt="Input photograph of architectural signage" width="565" height="753" draggable="false"></div>
+<span class="image-label before">Input</span><span class="image-label after">Ours</span><span class="divider" aria-hidden="true"><b>‹ ›</b></span></div><figcaption><strong>Architectural signage</strong><span>Fine stripes and interference across signage and building details.</span></figcaption></figure><figure data-comparison><div class="comparison" style="--reveal:50%" role="slider" tabindex="0" aria-label="Illustrated display: input and restoration comparison" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50% input" aria-describedby="compare-help">
+<img src="assets/paper-poster-restored.png" alt="Paper restoration of illustrated display" width="565" height="753" draggable="false">
+<div class="input-layer"><img src="assets/paper-poster-input.png" alt="Input photograph of illustrated display" width="565" height="753" draggable="false"></div>
+<span class="image-label before">Input</span><span class="image-label after">Ours</span><span class="divider" aria-hidden="true"><b>‹ ›</b></span></div><figcaption><strong>Illustrated display</strong><span>Moiré patterns across illustration and text.</span></figcaption></figure><figure data-comparison><div class="comparison" style="--reveal:50%" role="slider" tabindex="0" aria-label="Game display: input and restoration comparison" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50% input" aria-describedby="compare-help">
+<img src="assets/paper-game-display-restored.png" alt="Paper restoration of game display" width="565" height="753" draggable="false">
+<div class="input-layer"><img src="assets/paper-game-display-input.png" alt="Input photograph of game display" width="565" height="753" draggable="false"></div>
+<span class="image-label before">Input</span><span class="image-label after">Ours</span><span class="divider" aria-hidden="true"><b>‹ ›</b></span></div><figcaption><strong>Game display</strong><span>Color bands and fine screen patterns.</span></figcaption></figure></div><p class="figure-note">Qualitative examples from Figure 8 of the paper.</p></section>
+<section id="abstract" class="text-section"><h2>Overview</h2><p>Real-world screen photographs contain complex moiré patterns, from fine interference to broad color bands. We study image demoiréing through an image-editing prior, using dual-scale restoration and a change in image conditioning to combine global artifact removal with full-resolution refinement.</p><p>A first stage restores a reduced-resolution view. A second stage begins with the restored view as its image condition, then switches to the original capture to recover scene detail. The paper also introduces DailyMoiré130, a collection of 130 smartphone captures of everyday displays without aligned clean targets.</p></section>
+<section id="method" class="text-section"><h2>Method</h2><div class="method-strip"><div><span>01</span><h3>Global restoration</h3><p>Restore the image at a reduced resolution to address large-scale moiré patterns.</p></div><div><span>02</span><h3>Condition shift</h3><p>Begin full-resolution editing with the first-stage result, then switch conditioning to the original input.</p></div><div><span>03</span><h3>Full-resolution output</h3><p>Combine global restoration with the fine detail supplied by the original capture.</p></div></div><p class="figure-note">Editing may change color and fine detail. The examples above are reported paper results.</p></section>
+<section id="citation" class="text-section"><h2>BibTeX</h2><pre><code>@misc{zhou2026dualscale,
+  title  = {Dual-Scale Condition-Shift Editing for Robust Real-World Image Demoiréing},
+  author = {Shiyang Zhou and Haijin Zeng and Congpei Qiu and Zhengcen Li and Ping Chen and Xiangming Wang and Zheng Li and Yongyong Chen and Jingyong Su},
+  year   = {2026},
+  note   = {Manuscript},
+  url    = {https://clausy9.github.io/DemoireEdit/}
+}</code></pre><a class="citation-download" href="citation.bib" download>Download citation</a></section>
+<footer>DemoiréEdit · Dual-Scale Condition-Shift Editing</footer></main><script src="compare.js"></script></body></html>

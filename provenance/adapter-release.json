@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "repo_id": "umu/DemoireEdit",
+  "url": "https://huggingface.co/umu/DemoireEdit",
+  "revision": "be28c72d00e8ee3aa01e84c7ad063bdc18c7e604",
+  "filename": "demoireedit.safetensors",
+  "size_bytes": 472047184,
+  "sha256": "15ad05bfb1b8c9d975605b18195abcf8485f28a26bb9b07dc350740a465319fd",
+  "cloud_size_and_lfs_sha256_verified": true,
+  "public_access_verified": true
+}

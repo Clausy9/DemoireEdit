@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "base_model": "Qwen/Qwen-Image-Edit-2509",
+  "training": {
+    "steps": 3000,
+    "crop_size": 256,
+    "effective_batch_size": 96,
+    "learning_rate": {
+      "schedule": "cosine",
+      "start": 0.0001,
+      "end": 1e-07
+    },
+    "loss": {
+      "velocity": 1.0,
+      "l1": 0.5,
+      "lpips": 0.3,
+      "ffl": 0.2,
+      "latent_mse": 1.0
+    },
+    "unroll_steps": 5,
+    "recipe_note": "Owner requested latent MSE in addition to the four-component manuscript objective."
+  },
+  "inference": {
+    "mode": "progressive_2stage",
+    "stage1": {
+      "target_short_side": 1024,
+      "steps": 10,
+      "reference_mode": "black"
+    },
+    "stage2": {
+      "steps": 10,
+      "condition_ratio": 0.3,
+      "condition_steps_rule": "ceil(ratio * steps)",
+      "latent_initialization": "noise"
+    },
+    "cfg_scale": 1.0
+  },
+  "checkpoint": {
+    "path": "${DEMOIRE_EDIT_WEIGHTS_PATH}",
+    "size_bytes": 472047184,
+    "sha256": "15ad05bfb1b8c9d975605b18195abcf8485f28a26bb9b07dc350740a465319fd"
+  },
+  "method_title": "Dual-Scale Condition-Shift Editing for Robust Real-World Image Demoir\u00e9ing"
+}

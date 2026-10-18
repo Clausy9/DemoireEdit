@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-10-18T08:10:26.473024+00:00",
+  "source": "Manuscript figure1.pdf (Figure 1 teaser)",
+  "source_sha256": "a2a756dd12e4e11dc5171f3b4a562cfda604f2d8af87f167d7f9727d94b812ff",
+  "output": "assets/teaser.png",
+  "output_sha256": "32a428868021c7488d2ad5871de7a7cc4c6bb3a3a72bfb098158e5f4684af469",
+  "operation": "PDF rasterization at 2400-pixel full-page scale; whitespace-only margins omitted with a 16-pixel border",
+  "render_crop_pixels": [
+    79,
+    263,
+    2186,
+    734
+  ],
+  "content_changes": "None; original images, labels and comparisons retained."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "completed_pipeline_check",
+  "updated_at": 1792073451.2956636,
+  "elapsed_seconds": 178.42,
+  "result": {
+    "output": "outputs/real-scene-01-restored.png",
+    "dimensions": [
+      1536,
+      1536
+    ],
+    "sha256": "ae6df9d432a1ce35d3c48a47d292f5818f33476d1e8bb3067cd8f385902beb88",
+    "finite_pixels": true,
+    "nonconstant": true
+  },
+  "quality_review": "Visual inspection: fine repeated stripes and dense colored rings are reduced. Broad color variation remains and the output is softer. No aligned GT; no benchmark or universal quality claim.",
+  "scope": "One real photograph, 1536x1536 lossless center crop; single RTX 6000 Ada 48GB with CPU offload; no full-resolution 4K or training acceptance.",
+  "finite_tensor_guards": "Noise predictions and latents at every denoising step, and VAE outputs before image serialization in both stages."
+}

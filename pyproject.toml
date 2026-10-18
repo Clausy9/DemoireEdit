@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "demoireedit"
+version = "0.1.0.dev0"
+description = "Dual-scale condition-shift editing for image demoireing"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+dependencies = [
+  "torch==2.8.0", "torchvision==0.23.0", "transformers==4.55.0",
+  "safetensors==0.6.2", "accelerate==1.9.0", "einops==0.8.1",
+  "huggingface-hub==0.36.2", "peft==0.17.1", "lpips==0.1.4",
+  "Pillow>=10,<13", "numpy>=1.26,<3", "tqdm>=4.66,<5",
+  "imageio>=2.34,<3", "imageio-ffmpeg>=0.5,<1", "ftfy>=6.2,<7",
+  "sentencepiece>=0.2,<1", "protobuf>=4,<7", "pandas>=2,<3",
+]
+[project.optional-dependencies]
+demo = ["gradio==5.50.0"]
+
+[project.scripts]
+demoire-infer = "demoire_edit.infer:main"
+demoire-train = "demoire_edit.train:main"
+demoire-demo = "demoire_edit.demo:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

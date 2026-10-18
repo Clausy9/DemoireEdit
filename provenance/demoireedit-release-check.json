@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-10-18T07:48:16.519468+00:00",
+  "project": "DemoireEdit",
+  "python_package": "demoire_edit",
+  "commands": [
+    "demoire-infer",
+    "demoire-demo",
+    "demoire-train"
+  ],
+  "checks": {
+    "source_syntax": "passed",
+    "cpu_tests": {
+      "passed": 11,
+      "failed": 0,
+      "skipped": 0
+    },
+    "cli_help": [
+      "infer",
+      "train",
+      "demo"
+    ],
+    "privacy_scan": "passed configured private-string scan",
+    "adapter_source_size": 472047184,
+    "adapter_source_sha256": "15ad05bfb1b8c9d975605b18195abcf8485f28a26bb9b07dc350740a465319fd",
+    "adapter_source_md5": "ca14db09a2b39934dad4aeeed7c4a975",
+    "adapter_header_metadata_keys": [
+      "format"
+    ],
+    "wheel_build": "passed",
+    "wheel_privacy_scan": "passed",
+    "adapter_downloader_help": "passed",
+    "wheel_bytes": 115385,
+    "wheel_sha256": "898d61053111a70a717785d6a401725e2d2e6a7dbed3194d5648950628db0123"
+  },
+  "scope": "Renamed source and CLI checks; no new GPU inference or benchmark results claimed."
+}

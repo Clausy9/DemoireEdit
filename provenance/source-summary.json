@@ -1,0 +1,12 @@
+{
+  "source_snapshot_files": 101,
+  "source_snapshot_bytes": 914849,
+  "backend": "modified DiffSynth-Studio",
+  "license": "Apache-2.0",
+  "modifications": [
+    "owner-selected five-component objective, including latent MSE",
+    "clean-target training interpolation",
+    "lazy LPIPS/FFL initialization",
+    "selected dual-scale inference entry"
+  ]
+}

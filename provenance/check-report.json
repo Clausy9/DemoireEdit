@@ -1,0 +1,39 @@
+{
+  "created_at": "2026-10-14T07:57:16.083413+00:00",
+  "checks": {
+    "source_syntax": "passed",
+    "recipe_and_schedule": {
+      "passed": 5
+    },
+    "objective_weighting_and_backward": {
+      "passed": 4,
+      "execution": "temporary CPU execution with PyTorch 2.8.0",
+      "lpips_ffl_networks": "test doubles; real network initialization not tested"
+    },
+    "cli_help": "all three entry points passed",
+    "privacy_scan": "passed for configured forbidden strings",
+    "fresh_environment": {
+      "status": "passed",
+      "cpu_tests_passed": 11,
+      "dependency_consistency": "core and optional demo passed",
+      "platform": "Linux x86_64, Python 3.11, CUDA 12.8 wheels"
+    },
+    "gpu_inference": {
+      "status": "passed",
+      "receipt": "a6000-gpu-check.json",
+      "scope": "one real 1536x1536 crop; 10+10 steps; no aligned GT"
+    },
+    "real_demo_api": {
+      "status": "passed",
+      "receipt": "a6000-demo-check.json",
+      "pixels_equal_to_cli": true
+    }
+  },
+  "not_verified": [
+    "real LPIPS network initialization and full training integration",
+    "full 4K inference",
+    "paper-scale evaluation and general quality",
+    "redistribution rights review for all model/data/demo assets"
+  ],
+  "status_updated_at": "2026-10-15T14:36:33.800145+00:00"
+}

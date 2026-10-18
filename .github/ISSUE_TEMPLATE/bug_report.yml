@@ -1,0 +1,23 @@
+name: Bug report
+description: Report a reproducible installation or runtime issue.
+title: "[Bug] "
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python, GPU, driver and dependency versions. Remove private paths and credentials.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Command, settings and expected versus observed behavior. Include the model digest when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant error
+      description: Include a minimal error excerpt without credentials or personal information.

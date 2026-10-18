@@ -1,0 +1,45 @@
+{
+  "environment": {
+    "status": "ready",
+    "updated_at": 1792073262.0605013,
+    "checks": [
+      "fresh isolated dependency installation",
+      "pip dependency consistency",
+      "CPU unit checks",
+      "actual inference and training module imports",
+      "actual LoRA tensor integrity and DiT target dimensions"
+    ]
+  },
+  "lora": {
+    "status": "passed",
+    "tensor_count": 1440,
+    "dtype": "BF16",
+    "matched_linear_adapters": 720,
+    "metadata_keys": [
+      "format"
+    ],
+    "scope": "actual checkpoint tensors validated against a metadata-only DiT skeleton; full pretrained weight loading and GPU inference remain separate"
+  },
+  "input": {
+    "input": "inputs/real-scene-01.png",
+    "source_sha256": "246c049fce057454573f4ca3fae4b83e24267e2404f52c4f8b73017dc8a72c15",
+    "source_dimensions": [
+      4064,
+      3048
+    ],
+    "crop_box": [
+      1264,
+      756,
+      2800,
+      2292
+    ],
+    "input_dimensions": [
+      1536,
+      1536
+    ],
+    "input_sha256": "7ed615e5d3a6857659b31e46d47ad874002b2c35653a0b9a0befe3dc980fa3d8",
+    "preprocessing": "center crop only, lossless PNG, no embedded metadata",
+    "scope": "limited real-photo pipeline validation; no aligned GT"
+  },
+  "scope": "Fresh dependency and CPU checks passed; GPU and real demo acceptance are recorded in separate scoped receipts."
+}
