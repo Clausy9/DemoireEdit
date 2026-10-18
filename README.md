@@ -9,3 +9,5 @@ This repository contains static website files and selected qualitative paper pan
 To preview locally, run `python3 -m http.server 18782 --bind 127.0.0.1` from this directory.
 
 The displayed panels are historical paper results, not new inference runs. Images and manuscript content retain their respective authors’ rights; no model or data redistribution license is implied.
+
+Model adapter: https://huggingface.co/umu/DemoireEdit
