@@ -6,6 +6,7 @@
 
 [![Project Website](https://img.shields.io/badge/Project-Website-blue)](https://clausy9.github.io/DemoireEdit/)
 [![Hugging Face Models](https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Models&message=HuggingFace&color=orange)](https://huggingface.co/umu/DemoireEdit)
+[![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-DailyMoir%C3%A9130-green)](https://huggingface.co/datasets/umu/DailyMoire130)
 
 </div>
 
@@ -18,6 +19,7 @@ Dual-Scale Condition-Shift Editing approaches image demoiréing through image ed
 - **Restore globally, refine locally.** Two image scales connect scene-level restoration with input-resolution editing.
 - **Shift the condition during restoration.** The second stage begins with the globally restored image and returns to the original capture for later steps.
 - **Run and study the pipeline.** Inference, an interactive demo, paired-data training and reproducible configurations are included.
+- **Study everyday display captures.** DailyMoiré130 provides 130 original-resolution screen photographs for unpaired real-world evaluation.
 
 ## Visual results
 
@@ -28,6 +30,12 @@ Dual-Scale Condition-Shift Editing approaches image demoiréing through image ed
 | Game display | <img src="site/assets/paper-game-display-input.png" width="280" alt="Game display with broad colored bands and fine stripes"> | <img src="site/assets/paper-game-display-restored.png" width="280" alt="Paper result for the game display"> |
 
 Qualitative examples from **Figure 8 of the paper**, shown as input/result pairs. These are historical paper outputs, not new executions of this repository. The figures have no aligned ground truth and do not establish universal quality. See the [interactive comparisons](https://clausy9.github.io/DemoireEdit/#results) and [asset provenance](provenance/qualitative-examples.json).
+
+## DailyMoiré130 dataset
+
+[Download DailyMoiré130 on Hugging Face](https://huggingface.co/datasets/umu/DailyMoire130): **130 original-resolution screen photographs**, one `test` split, and no aligned clean targets. The release includes a per-image SHA-256 manifest and an evaluation protocol.
+
+The public derivative has local blur in 18 images; the other 112 retain their scene pixels. Image dimensions, source color profiles, and pixels outside blur regions are preserved. Consult the dataset card for processing details and terms, and pin a dataset revision when reporting results. Historical paper scores are not a new evaluation of this derivative.
 
 ## Documentation
 
