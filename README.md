@@ -4,6 +4,7 @@
 
 ### Dual-Scale Condition-Shift Editing for Robust Real-World Image Demoiréing
 
+[![arXiv](https://img.shields.io/badge/arXiv-2610.26644-b31b1b)](https://arxiv.org/abs/2610.26644)
 [![Project Website](https://img.shields.io/badge/Project-Website-blue)](https://clausy9.github.io/DemoireEdit/)
 [![Hugging Face Models](https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Models&message=HuggingFace&color=orange)](https://huggingface.co/umu/DemoireEdit)
 [![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-DailyMoir%C3%A9130-green)](https://huggingface.co/datasets/umu/DailyMoire130)
